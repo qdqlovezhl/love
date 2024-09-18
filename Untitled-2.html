@@ -1,40 +1,26 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8" />
-    <title>爱意永存</title>
-</head>
-<body>  
- <h1 align="center"><font face="华文彩云"  color="red">山无棱<br/>天地合<br/>乃敢与君绝</font></h1>
- 
- <hr color="bule" align="center" size="3" width="600像素"/> 
- <h2 align="left"><u><font color="black">2级标题,左对齐。</font></u></h2>
-
- 
-
-
- <h3 align="center"><font color="yellow"><i>三级标题,居中对齐</i></font></h3>
- <hr color="pink" width="50%" size="1" align="right">
- <h4 align="right"><font color="green">四级标题，右对齐</font></h4> 
- <p align="center"><font color="red" size="9">身之所向<br/>心之所往</font></p> 
-</body>
-<h3 align="center"><font color="orange">爱玲玲的笨蛋阿权</font></h3>
-
-<div class="digitalClock"></div>
-<script>
-var clock =document.querySelector(".digitalClock");
-var now,second,minute,hour,date,month,year;
-function showTime(){
-    now = new Date();
-    second = now.getSeconds()+1;
-    minute = now.getMinutes();
-    hour = now.getHours();
-    date = now.getDate();
-    month = now.getMonth()+1;
-    year = now.getFullYear();
-    clock.innerHTML = "<p align=center >" + "北京时间：<br>" +year+"年"+month+"月"+date +"日<br>"+hour+"时"+minute+"分"+second+"秒</p>"
-}
-setInterval(showTime,1000)
-</script>   
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS3</title>
+		<style type="text/css">
+			h1{text-align:center;text-decoration:underline;color:pink;}
+			h2{text-align:center;color:red;font-family:"方正舒体";font-size:16px;}
+			h3{color:blue;letter-spacing:7px;}
+			p{font-style:oblique;color:green;font-family:宋体;}
+			h4{font-weight:700px;color:purple;text-shadow:-10px -5px 10px pink;}
+			h5{text-align:right;font-family:"微软雅黑";}
+		</style>
+	</head>
+	<body>
+		<h1>你若安好，便是晴天</h1>
+		<h2>一个人，一本书，一杯茶，一帘梦。</h2>
+		<h3>站在时光的十字路口，回望过去的种种单纯与美好，欣慰而欣喜。</h3>
+		<p>花开花落，风卷云舒。青春如同流沙般从指缝溜走，过去的倔强与轻狂，原来如此荒诞不羁。俗世喧嚣，总会想在空灵停滞的时<br><!--[if IE]>
+			
+		<![endif]-->空内，独倚幽窗，品一壶清茶，细细体味光阴如梭，年华老去。</p >
+		<h4>无尽的希望，无穷的力量，祖国万岁。</h4>
+		<h5><font color="pink">这里是爱你的笨蛋小邱</h5>
+	</body>
 </html>
