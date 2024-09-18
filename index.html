@@ -15,5 +15,21 @@
  <h4 align="center"><font color="green">起为少年试一鸣</font></h4> 
  <p align="center"><font color="red" size="9">身之所向<br/>心之所往</font></p > 
 </body>
+  <div class="digitalClock"></div>
+<script>
+var clock =document.querySelector(".digitalClock");
+var now,second,minute,hour,date,month,year;
+function showTime(){
+    now = new Date();
+    second = now.getSeconds()+1;
+    minute = now.getMinutes();
+    hour = now.getHours();
+    date = now.getDate();
+    month = now.getMonth()+1;
+    year = now.getFullYear();
+    clock.innerHTML = "<p align=center >" + "北京时间：<br>" +year+"年"+month+"月"+date +"日<br>"+hour+"时"+minute+"分"+second+"秒</p>"
+}
+setInterval(showTime,1000)
+</script>   
 <h3 align="center"><font color="orange">无心者无爱</font></h3>
 </html>
