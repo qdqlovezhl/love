@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: ;
+        }
+
+        div {
+            width: 660px;
+            height: 530px;
+            margin-top: 80px;
+            margin-left: 700px;
+        }
+
+        .btn1 {
+            width: 100px;
+            height: 30px;
+            background-color: #93b518;
+            color: white;
+            border: none;
+            margin-left: 60px;
+        }
+
+        .btn2 {
+            width: 100px;
+            height: 30px;
+            background-color: #93b518;
+            color: white;
+            border: none;
+            margin-left: 40px;
+        }
+
+        .btn1:hover {
+            /* 鼠标悬停时鼠标图标变成手型 */
+            cursor: pointer;
+        }
+
+        .btn2:hover {
+            /* 鼠标悬停时鼠标图标变成手型 */
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2 align="center">职工信息登记表</h2>
+        <!-- 表单域 -->
+        <form action="demo.html" method="post">
+            <!-- 用户登录名 -->
+            <p><span>用户名登录名：</span><input type="text" name="username" value="myemail@163.com" readonly
+                    disabled>（不能修改，只能查看）</p>
+            <!-- 姓名 -->
+            <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真实姓名：</span><input type="text" name="name"
+                    placeholder="例如：王明" autofocus required>（必须填写，只能输入汉字）</p>
+            <!-- 年龄 -->
+            <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;真实年龄：</span><input type="age" name="age"
+                    value="24" required>（必须填写）</p>
+            <!-- 出生日期 -->
+            <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;出生日期：</span><input type="date" name="birthday"
+                    value="2000-01-01" required>（必须填写）</p>
+            <!-- 电子邮箱 -->
+            <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电子邮箱：</span><input type="email" name="email"
+                    placeholder="myemail@163.com" required>（必须填写，格式正确）</p>
+            <!-- 身份证号码 -->
+            <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;身份证号：</span><input type="text"
+                    pattern="[0-9]{17}([0-9]|X)" required>（必须填写，能够以数字、字母x结尾的短身份证号）</p>
+            <!-- 手机号码 -->
+            <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;手机号码：</span><input type="tel" name="phone" required>（必须填写）</p>
+            <!-- 个人主页 -->
+            <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;个人主页：</span><input type="url" name="homepage"
+                    placeholder="例如：http://www.myhomepage.com">（请选择网址）</p>
+            <!-- 幸运颜色 -->
+            <p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;幸运颜色：</span><input type="color" name="color"
+                    value="#FF0000">（请选择你喜欢的颜色）</p>
+            <br><br>
+            <!-- 提交、重置按钮 -->
+            <p><input type="submit" value="提交" class="btn1"><input type="reset" value="重置" class="btn2"></p>
+        </form>
+    </div>
+</body>
+
+</html>
