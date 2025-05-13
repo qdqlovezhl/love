@@ -1,7 +1,7 @@
 const CONFIG = {
     token: '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',      // 替换为你的GitHub令牌
     owner: 'qdqlovezhl',   // GitHub用户名
-    repo: 'blog-comments'     // 仓库名
+    repo: 'love'     // 仓库名
 };
 document.getElementById('commentForm').addEventListener('submit', async (e) => {
     e.preventDefault();
