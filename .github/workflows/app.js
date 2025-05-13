@@ -3,7 +3,6 @@ const CONFIG = {
     owner: 'qdqlovezhl',   // GitHub用户名
     repo: 'blog-comments'     // 仓库名
 };
-
 document.getElementById('commentForm').addEventListener('submit', async (e) => {
     e.preventDefault();
     
